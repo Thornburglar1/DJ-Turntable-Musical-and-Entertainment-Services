@@ -1,0 +1,943 @@
+/** {
+  border:3px dashed white;
+}*/
+
+body {
+  font-family: Verdana;
+  margin:0;
+  padding:0;
+}
+
+header, .celebrations, .special, .corporate, .weddings {
+  border:solid white 5px;
+}
+
+nav, main, footer, aside, .learn, .left, .middle, .right, .one, .two, .three, .four, .five, .six {
+   border-radius:5px;
+   border:solid black 5px;
+}
+
+header {
+    grid-area:header;
+    background:#000000;
+    text-align:center;
+}
+
+header h1 {
+     font-size:5vw;
+     color:#ffffff;
+     font-family:Impact;
+     text-shadow: 2px 2px 5px #3217ff;
+     margin: 0;
+     animation: words 2s 1.5s;
+}
+
+header h2{
+  font-size:3vw;
+  color:#ffffff;
+  margin:5px;
+}
+
+nav li {
+    padding:5px;
+    list-style-type:none;
+    font-size:1.5em;
+    font-weight:bold;
+}
+
+nav a {
+    text-decoration:none;
+}
+nav a:hover {
+    text-shadow: 2px 2px 5px #ffffff;
+}
+
+main {
+    grid-area:main;
+    background:#1F51FF;
+    color:#0000B0;
+    padding:5px;
+    }
+
+main h2 {
+    text-align:center;
+    margin:1%;
+    color:#ffffff;
+}
+
+main p {
+    color:#ffffff;
+    padding:1% 2%;
+    font-size:1em;
+}
+
+main a {
+ color:#ffffff;
+}
+
+footer {
+    grid-area:footer;
+    background:#9D00FF;
+    padding:5px;
+    text-align:center;
+    }
+
+footer p {
+     font-size:1em;
+     color:#ffffff;
+     margin:0;
+}
+
+nav {
+    background-color:#39FF14;
+    font-size:80%;
+    grid-area:nav;
+    text-align:center;
+    padding:.5em;
+    margin:0;
+    /*These next 4 lines make it stick at the top*/
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    z-index:999;
+}
+
+aside{
+  background-color:#FFFF33;
+  text-align:center;
+}
+
+.info{
+  background-color:white;
+}
+
+.info p{
+  font-size:20px;
+}
+
+.headerpic{
+  grid-area:headerpic;
+  padding:5px;
+  text-align:center;
+  width:65%;
+}
+
+fig1{
+  background-color:#FF5F1F;
+  text-align:center;
+}
+
+.headerwrapper{
+  display:grid;
+  justify-items:center;
+  align-items:center;
+  grid-template-columns:75% 1fr;
+  grid-template-areas:
+  "headerpic headertext";
+}
+
+.mainpic{
+  display:grid;
+  margin:auto;
+  max-width:70%;
+  
+}
+
+.learn{
+  grid-area:learn;
+    background:#FF10F0;
+    text-align:center;
+}
+
+.learn h2{
+  color:white;
+}
+
+.learn p{
+  font-size:20px;
+}
+
+.soundcontrol{
+  text-align:center;
+  padding:5px;
+}
+
+video{
+  min-width:270px;
+  max-width:60%;
+}
+
+video[poster]{
+  object-fit:cover;
+}
+
+.text{
+  font-size:23px;
+  margin:20px;
+}
+
+.text2{
+  font-size:23px;
+  margin:20px;
+}
+
+.form{
+  background-color:#FF5F1F;
+  text-align:center;
+}
+
+.button{
+  font-size:20px;
+  margin:10px;
+}
+
+.pack{
+  background-color:#1F51FF;
+}
+
+.left{
+  background-color:#C0C0C0;
+  grid-area:left;
+}
+
+.left h2{
+  text-align:center;
+}
+
+.left p{
+  text-align:center;
+}
+
+.middle{
+  background-color:#FFD700;
+  grid-area:middle;
+}
+
+.middle h2{
+  text-align:center;
+}
+
+.middle p{
+  text-align:center;
+}
+
+.right{
+  background-color:#11ffe3;
+  grid-area:right;
+}
+
+.right h2{
+  text-align:center;
+}
+
+.right p{
+  text-align:center;
+}
+
+.first {
+    grid-area:first;
+    margin-top:1em;
+}
+
+.details{
+  text-align:center;
+}
+
+.details p{
+  margin:5px;
+}
+
+.details a{
+  font-size:20px;
+  color:yellow;
+}
+
+.special{
+  grid-area:special;
+  text-align:center;
+  background-color:black;
+}
+
+.celebrations{
+  grid-area:celebrations;
+  text-align:center;
+  background-color:#FF10F0;
+}
+
+.weddings{
+  grid-area:weddings;
+  text-align:center;
+  background-color:#9D00FF;
+}
+
+.corporate{
+  grid-area:corporate;
+  text-align:center;
+  background-color:#FFFF33;
+}
+
+.wed{
+  margin:10px;
+}
+
+.cely{
+  height:auto;
+  width:auto;
+  margin:10px;
+}
+
+.corp{
+  margin:10px;
+}
+
+.spec{
+  height:auto;
+  margin:10px;
+}
+
+.weddings a{
+  color:white;
+}
+
+.special a{
+  color:white;
+}
+
+.one{
+  grid-area:one;
+  background-color:#FFD700;
+  Text-align:center;
+}
+
+.two{
+  grid-area:two;
+  background-color:#11ffe3;
+  Text-align:center;
+}
+
+.three{
+  grid-area:three;
+  background-color:#ff1493;
+  Text-align:center;
+}
+
+.four{
+  grid-area:four;
+  background-color:#FFD700;
+  Text-align:center;
+}
+
+.five{
+  grid-area:five;
+  background-color:#11ffe3;
+  Text-align:center;
+}
+
+.six{
+  grid-area:six;
+  background-color:#ff1493;
+  Text-align:center;
+}
+
+.about{
+ text-align:center;
+ font-size:1.3em;
+ background-color:#ff1493;
+}
+
+.about a{
+  color:yellow;
+  font-size:24px;
+}
+
+.plan{
+  background-color:#FF5F1F;
+}
+
+.plan a{
+  color:yellow;
+}
+
+.plan p{
+  font-weight:bold;
+  font-size:20px;
+  color:white;
+}
+
+.inform{
+  background-color:#000080;
+}
+
+.story{
+  text-align:center;
+  color:white;
+}
+
+.weddin{
+  text-align:center;
+  background-color:#11ffe3;
+  color:black;
+}
+
+.weddin p{
+  font-size:20px;
+  color:black;
+}
+
+.weddin h1{
+  color:black;
+}
+
+.weddin a{
+  color:blue;
+}
+
+.celeb{
+  text-align:center;
+  background-color:#FFD700;
+  color:black;
+}
+
+.celeb p{
+  font-size:20px;
+  color:black;
+}
+
+.celeb h1{
+  color:black;
+}
+
+.celeb a{
+  color:blue;
+}
+
+.cor{
+  text-align:center;
+  background-color:#ff1493;
+  color:black;
+}
+
+.cor p{
+  font-size:20px;
+  color:black;
+}
+
+.cor h1{
+  color:black;
+}
+
+.cor a{
+  color:blue;
+}
+
+.spe{
+  text-align:center;
+  background-color:#ffffff;
+  color:black;
+}
+
+.spe p{
+  font-size:20px;
+  color:black;
+}
+
+.spe h1{
+  color:black;
+}
+
+.spe a{
+  color:blue;
+}
+
+.second {
+    grid-area:second;
+}
+
+.third {
+    grid-area:third;
+}
+
+.fourth {
+    grid-area:fourth;
+}
+
+.fifth {
+    grid-area:fifth;
+}
+
+.sixth {
+    grid-area:sixth;
+}
+
+.seventh {
+    grid-area:seventh;
+}
+.eighth {
+    grid-area:eighth;
+}
+
+/*parallax*/
+html {
+    height:100%;
+}
+
+.parallax {
+  font-family: Verdana;
+  background-color:gray;
+  margin:0;
+  background: url('DJPic1.jpg') no-repeat center center;
+  background-attachment:scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    }
+    
+.parallax:after{
+      content:"";
+      position:fixed; /* stretch a fixed position to the whole screen */
+      top:0;
+      height:100vh; /* fix for mobile browser address bar appearing disappearing */
+      left:0;
+      right:0;
+      z-index:-1; /* needed to keep in the background */
+      background: url("DJPic1.jpg") center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+/*Slideshow*/
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+65% { left: -200%; }
+70% { left: -300%; }
+85% { left: -300%; }
+95% { left: -400%; }
+}
+
+
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%;}
+div#slider figure {
+  position: relative;
+  z-index:1;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 20s slidy infinite;
+}
+
+.fronttext {
+    z-index:2;
+    color:white;
+    font-size:20vw;
+    text-align:center;
+    position:absolute;
+    width:100%;
+}
+
+html {
+    height:100%;
+}
+
+.nestedgrid3 {
+  grid-area:nestedgrid3;
+  display:grid;
+}
+.nestedgrid3 img{
+  max-width:90%;
+}
+.nestedgrid3 a{
+  font-size:3em;
+}
+/*---------------------------Mobile Layout----------------------------*/
+#navwrapper { /*This will be the mobile layout AND the TABLET given the number of options, with each option stacking vertically after the word menu is clicked; you will need to add six, seven, and maybe eight*/
+    display:grid;
+    grid-template-areas:
+    "first"
+    "second"
+    "third"
+    "fourth"
+    "fifth"
+    "sixth"
+    "seventh"
+    "eighth";
+    }
+
+
+.container1 { /*for index.html*/
+  display: grid;
+  margin:1%;
+  margin-top:80vh;
+  grid-template-columns:1fr;
+  grid-gap:.5em;
+  animation:FadeAndScale 1s;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "learn"
+    "footer";
+    }
+    
+.container2 { /*for index.html*/
+  display: grid;
+  grid-template-columns:100%;
+  grid-gap:.5em;
+  margin:1%;
+  animation:FadeAndScale 1s;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "footer";
+    }
+
+.container3 { /*for blog.html*/
+  display: grid;
+  grid-template-columns:100%;
+  grid-gap:.5em;
+  margin:1%;
+  animation:FadeAndScale 1s;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "left"
+    "middle"
+    "right"
+    "footer";
+}
+
+.container4 {
+display:grid;
+grid-template-columns:100%;
+margin:1%;
+grid-gap:.5em;
+animation:FadeAndScale 1s;
+grid-template-areas:
+"header"
+"nav"
+"main"
+"nestedgrid3"
+"footer";
+}
+
+.container5 {
+display:grid;
+grid-template-columns:auto;
+margin:1%;
+grid-gap:.5em;
+animation:FadeAndScale 1s;
+grid-template-areas:
+"header"
+"nav"
+"one"
+"two"
+"three"
+"four"
+"five"
+"six"
+"footer";
+}
+
+.nestedgrid{
+display:grid;
+grid-template-columns:100%;
+animation:FadeAndScale 1s;
+grid-template-areas:
+"section"
+"fig1";
+}
+.nestedgrid3 {
+  display:grid;
+  grid-template-columns:1fr;
+  grid-template-areas:
+"weddings"
+"corporate"
+"celebrations"
+"special";
+}
+/*This stuff is for the hamburger menu*/
+.toggleNav {
+    display:grid;
+    font-size:1.5em;
+    margin-left:-.5em;
+    font-weight:bold;/*This is what allows the hamburger icon and "Menu" to display*/
+    }
+
+#flex-nav ul {
+    display: none; /*jQuery toggles the nav from to this class to the .open when clicked*/
+    text-align:center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+ 
+#flex-nav ul.open { /*.open is the class that gets toggled when clicked (with help from the jQuery code)*/
+    display:grid;
+    }
+    
+#flex-nav li {
+    padding-left:.5em;
+    padding-top:.5em;
+    }
+
+#flex-nav a {
+    color:black;
+    text-decoration:none;
+    }
+
+#flex-nav a:hover {
+    color:#0000B0;
+    }
+
+    
+/*-----------------------Tablet Media Query------------------------*/
+@media only screen and (min-width: 480px)  {
+  
+#navwrapper { /*This will be the mobile layout AND the TABLET given the number of options, with each option stacking vertically after the word menu is clicked; you will need to add six, seven, and maybe eight*/
+    display:grid;
+    text-align:center;
+    grid-template-areas:
+    "first"
+    "second"
+    "third"
+    "fourth"
+    "fifth"
+    "sixth"
+    "seventh"
+    "eighth";
+    }
+    
+
+.container1 { /*for index.html*/
+  grid-template-columns: auto 1fr;
+  margin-top:80vh;
+  animation:FadeAndScale 1s;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "main aside"
+    "learn learn"
+    "footer footer";
+    }
+    
+.container2 { /*for index.html*/
+  display: grid;
+  grid-template-columns:auto;
+  grid-gap:.5em;
+  margin:1%;
+  animation:FadeAndScale 1s;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "footer";
+}
+
+.container3 { /*for blog.html*/
+  display: grid;
+  grid-template-columns:auto 1fr` 1.5fr;
+  grid-gap:.5em;
+  margin:1%;
+  animation:FadeAndScale 1s;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "left middle right"
+    "footer footer footer";
+}
+
+.container4{
+display:grid;
+grid-template-columns:1fr 1fr;
+margin:1%;
+grid-gap:.5em;
+animation:FadeAndScale 1s;
+grid-template-areas:
+"header header"
+"nav nav"
+"main main"
+"nestedgrid3 nestedgrid3"
+"footer footer";
+}
+
+.container5 {
+display:grid;
+grid-template-columns:auto;
+margin:1%;
+grid-gap:.5em;
+animation:FadeAndScale 1s;
+grid-template-areas:
+"header"
+"nav"
+"one"
+"two"
+"three"
+"four"
+"five"
+"six"
+"footer";
+}
+
+.nestedgrid{
+display:grid;
+grid-template-columns:100%;
+animation:FadeAndScale 1s;
+grid-template-areas:
+"section"
+"fig1";
+}
+.nestedgrid3 {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-areas:
+"weddings corporate"
+"celebrations special";
+}
+
+.toggleNav {
+    display: grid; /*Makes the hamburger icon with the word "Menu" to disappear at this screen size*/
+  }
+  
+}
+
+/*-----------------------Desktop Media Query------------------------*/
+@media only screen and (min-width: 960px)  {
+
+.first {
+  margin-top:0;
+  margin-left:1em;
+}
+
+#navwrapper {
+    display:grid;
+    text-align:center;
+    justify-items:center;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-areas:
+    "first second third fourth fifth sixth seventh eighth";
+    }
+    
+.container1 { /*for index.html*/
+  grid-template-columns:30% 30% auto;
+  margin-top:80vh;
+  animation:FadeAndScale 1s;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "main main aside"
+    "learn learn learn"
+    "footer footer footer";
+    }
+
+.container2 { /*for index.html*/
+  display: grid;
+  grid-template-columns:auto;
+  grid-gap:.5em;
+  margin:1%;
+  animation:FadeAndScale 1s;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "footer";
+    }
+    
+.container3 { /*for blog.html*/
+  display: grid;
+  grid-template-columns:auto 1fr 1.5fr;
+  grid-gap:.5em;
+  margin:1%;
+  animation:FadeAndScale 1s;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "left middle right"
+    "footer footer footer";;
+}
+
+.container4 {
+display:grid;
+grid-template-columns:1fr 1fr;
+margin:1%;
+grid-gap:.5em;
+animation:FadeAndScale 1s;
+grid-template-areas:
+"header header"
+"nav nav"
+"main main"
+"nestedgrid3 nestedgrid3"
+"footer footer";
+}
+
+.container5 {
+display:grid;
+grid-template-columns:auto;
+margin:1%;
+grid-gap:.5em;
+animation:FadeAndScale 1s;
+grid-template-areas:
+"header"
+"nav"
+"one"
+"two"
+"three"
+"four"
+"five"
+"six"
+"footer";
+}
+
+.nestedgrid{
+display:grid;
+grid-template-columns:1.5fr 1fr;
+animation:FadeAndScale 1s;
+grid-template-areas:
+"section fig1";
+  }
+  
+.nestedgrid2{
+display:grid;
+grid-template-columns:1fr 1fr;
+animation:FadeAndScale 1s;
+grid-template-areas:
+".text1 .text2";
+  }
+  
+.nestedgrid3 {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-areas:
+"weddings corporate"
+"celebrations special";
+}
+
+.toggleNav {
+    display: none; /*Makes the hamburger icon with the word "Menu" to disappear at this screen size*/
+  }
+#flex-nav ul {
+    display:grid;
+    text-align:left;
+  }
+
+#flex-nav li {
+    padding-left:.5em;
+    padding-top:.75em;
+  }
+}
