@@ -174,15 +174,17 @@ video[poster]{
 .text{
   font-size:23px;
   margin:20px;
+  color:black;
 }
 
 .text2{
   font-size:23px;
   margin:20px;
+  color:black;
 }
 
 .form{
-  background-color:#FF5F1F;
+  background-color:#FF6224;
   text-align:center;
 }
 
@@ -261,7 +263,7 @@ video[poster]{
 .celebrations{
   grid-area:celebrations;
   text-align:center;
-  background-color:#FF10F0;
+  background-color:#0000B0;
 }
 
 .weddings{
@@ -273,7 +275,7 @@ video[poster]{
 .corporate{
   grid-area:corporate;
   text-align:center;
-  background-color:#FFFF33;
+  background-color:#013220;
 }
 
 .wed{
@@ -300,6 +302,14 @@ video[poster]{
 }
 
 .special a{
+  color:white;
+}
+
+.celebrations a{
+  color:white;
+}
+
+.corporate a{
   color:white;
 }
 
@@ -342,7 +352,7 @@ video[poster]{
 .about{
  text-align:center;
  font-size:1.3em;
- background-color:#ff1493;
+ background-color:#0000B0;
 }
 
 .about a{
@@ -351,11 +361,11 @@ video[poster]{
 }
 
 .plan{
-  background-color:#FF5F1F;
+  background-color:#A32300;
 }
 
 .plan a{
-  color:yellow;
+  color:#FFFF61;
 }
 
 .plan p{
@@ -413,7 +423,7 @@ video[poster]{
 
 .cor{
   text-align:center;
-  background-color:#ff1493;
+  background-color:#FF6BB5;
   color:black;
 }
 
@@ -427,7 +437,7 @@ video[poster]{
 }
 
 .cor a{
-  color:blue;
+  color:#000047;
 }
 
 .spe{
