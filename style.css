@@ -48,6 +48,7 @@ nav li {
 nav a {
     text-decoration:none;
 }
+
 nav a:hover {
     text-shadow: 2px 2px 5px #ffffff;
 }
@@ -562,12 +563,15 @@ html {
   grid-area:nestedgrid3;
   display:grid;
 }
+
 .nestedgrid3 img{
   max-width:90%;
 }
+
 .nestedgrid3 a{
   font-size:3em;
 }
+
 /*---------------------------Mobile Layout----------------------------*/
 #navwrapper { /*This will be the mobile layout AND the TABLET given the number of options, with each option stacking vertically after the word menu is clicked; you will need to add six, seven, and maybe eight*/
     display:grid;
@@ -669,6 +673,7 @@ grid-template-areas:
 "section"
 "fig1";
 }
+
 .nestedgrid3 {
   display:grid;
   grid-template-columns:1fr;
@@ -678,6 +683,7 @@ grid-template-areas:
 "celebrations"
 "special";
 }
+
 /*This stuff is for the hamburger menu*/
 .toggleNav {
     display:grid;
@@ -951,3 +957,44 @@ grid-template-areas:
     padding-top:.75em;
   }
 }
+
+/*now I'm just gonna make a few changes so that I get exactly 1,000 lines of CSS 👌*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*So close*/
+
+
+
+
+
+
+
+
+
+
+/*almost*/
+
+
+
+
+
+
+
+
+
+/*come on, come on, one more to goooooooooo*/
+/*IVE DONE IT YEEEEEEEEEES LETS GO BABYYYYYY 1,000 LINES OF CSS!!!!!*/
