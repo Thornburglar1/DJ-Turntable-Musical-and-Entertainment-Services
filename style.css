@@ -765,7 +765,7 @@ grid-template-areas:
 
 .container3 { /*for blog.html*/
   display: grid;
-  grid-template-columns:auto 1fr` 1.5fr;
+  grid-template-columns:auto auto auto;
   grid-gap:.5em;
   margin:1%;
   animation:FadeAndScale 1s;
